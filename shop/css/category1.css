@@ -46,11 +46,11 @@ i{
     z-index: 10;
     background-color: #FFF;
     overflow: auto;
-    webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 }
 .list .ul{
     position: absolute;
-    webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     width: 100%;
 }
 .list .ul li{
