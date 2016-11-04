@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Microsoft YaHei UI";
+    color: #666;
+}
+ul{
+    list-style: none;
+}
+i{
+    font-style: normal;
+}
+.list{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 84px;
+    color: #666666;
+    font-size: 13px;
+    float: left;
+}
+.list .ul{
+    position: absolute;
+
+    width: 100%;
+}
+.list .ul li{
+    height: 46px;
+    line-height: 46px;
+    padding-left: 10px;
+    background-color: #eee;
+    border-right: 1px solid #e2dfdf;
+    border-top: 1px solid #f4f4f4;
+}
+.list .ul li.select{
+    background: #fff;
+    color: #47b34f;
+    border-left: 2px solid #47b34f;
+    border-right: none;
+}
+.list .ul li.more{
+    height: auto;
+    border: none;
+    /*background-color: #fff;*/
+    display: none;
+}
+
+.list .ul li.more p{
+    height: 46px;
+    line-height: 46px;
+    color: #666;
+    border-top:1px solid #f4f4f4;
+    margin-left: -10px;
+    padding-left: 10px;
+    border-right: 1px solid #e2dfdf;
+}
+.list .ul li.more p.select{
+    border-left: 2px solid #47b34f;
+    margin-left: -10px;
+    padding-left: 10px;
+    color: #47b34f;
+    border-right: none;
+}
+.list .ul li.more .fir{
+    color: #47b34f;
+    background-color: #f4f4f4;
+}
+
+.conRig .tit{
+    position: absolute;
+    left: 84px;
+    right: 0;
+    top: 0;
+    height: 31px;
+    padding-left: 11px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 30px;
+    background-color: #f4f4f4;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 11;
+    text-overflow: ellipsis;
+}
+.context{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    top: 31px;
+}
+.context .con{
+    position: absolute;
+    width: 100%;
+}
+.menu{
+    position: relative;
+    padding-left: 10px;
+}
+.menu li{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 10px 10px 10px 0;
+    border-bottom: 1px solid #f3eaea;
+}
+.menu li img{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 2px;
+    float: left;
+}
+.menu li .dl{
+    margin-left: 70px;
+}
+.menu li .dl dt{
+    font-size: 14px;
+    color: #666666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 5px;
+    max-height: 42px;
+    line-height: 21px;
+    -webkit-line-clamp: 2;
+    -ms-line-clamp: 2;
+    -moz-line-clamp: 2;
+    line-clamp: 2;
+}
+
+.menu li .dl dd:nth-child(1){
+    padding-left: 5px;
+    min-height: 20px;
+    overflow: hidden;
+    padding-top: 0;
+}
+.menu li .dl dd span{
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 1px 2px;
+    line-height: 15px;
+    font-size: 10px;
+    background: #FFCE0B;
+}
+.menu li label{
+    font-size: 16px;
+    color: #ff3434;
+    padding-left: 4px;
+    white-space: nowrap;
+}
+.menu li label em{
+    font-style: normal;
+    font-size: 12px;
+}
+.menu .Box{
+    position: absolute;
+    right: 10px;
+    bottom: -2px;
+}
+.menu .Box span{
+    cursor: pointer;
+    float: left;
+    text-indent: -99999px;
+    display: inline-block;
+    background-image: url("../img/addNumSprite.png");
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    -webkit-background-size: 400% 100%;
+    background-size: 400% 100%;
+    width: 28px;
+    height: 28px;
+    vertical-align: top;
+    border: 0 none;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+.menu .Box span.reduce {
+    background-position: -42px 0;
+}
+.menu .Box label{
+    float: left;
+    color: #333333;
+    font-size: 12px;
+    padding: 0;
+    width: 24px;
+    height: 28px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    vertical-align: top;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+    background-color: transparent;
+    margin-top: 6px;
+}
+.menu .Box .hide{
+    display: none;
+}
+.menu .Box .show{
+    display: block;
+}
+
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.footer{
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 48px;
+    background-color: #fff;
+    border-top: 1px solid #bbb;
+    box-sizing: border-box;
+}
+.footer .cart{
+    position: absolute;
+    z-index: 14;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 48px;
+    background: url("../img/cart.png") 10px 5px no-repeat;
+    background-size: 50px 125px;
+    transition: transform .5s ease-out 0s;
+    -webkit-transition: -webkit-transform .5s ease-out 0s;
+}
+.footer .cart .total{
+    position: absolute;
+    top: 0px;
+    left: 44px;
+    padding: 0 5px;
+    height: 15px;
+    line-height: 15px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    background-color: #ff5d5c;
+    border-radius: 7px;
+    font-size: 10px;
+}
+.footer .cart.light {   /*购物车有商品时，加的样式*/
+    top: -13px;
+    height: 58px;
+    background-position: 10px -75px;
+    background-size: 50px 125px;
+}
+.footer .mon{
+    position: absolute;
+    left: 70px;
+    font-size: 15px;
+    line-height: 48px;
+}
+.footer .mon.has{   /*购物车有商品时，加的样式*/
+    font-size: 18px;
+    color: #ff3434;
+}
+.footer .pay{
+    position: absolute;
+    right: 0;
+    width: 115px;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+    background-color: #bebebe;
+}
+.footer .pay.bg{    /*购物车有商品时，加的样式*/
+    background-color: #47b34f;
+}

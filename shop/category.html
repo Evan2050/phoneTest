@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/category1.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="goods">
+    <div class="list" id="list">
+        <ul class="ul" id="ul">
+            <li class="select">促销专区</li>
+            <li>秒杀</li>
+            <li>海报热卖</li>
+            <li class="mm">暖暖火锅季</li>
+            <li class="more">
+                <!--<p>暖暖火锅季</p>   &lt;!&ndash;class="fir"&ndash;&gt;-->
+                <div class="cont">
+                    <p class="select">促销专区</p>
+                    <p>促销专区1</p>
+                    <p>促销专区2</p>
+                    <p>促销专区3</p>
+                </div>
+            </li>
+            <li>新鲜水果</li>
+            <li>促销专区4</li>
+            <li>促销专区5</li>
+            <li>促销专区6</li>
+            <li>促销专区7</li>
+            <li>促销专区8</li>
+            <li>新鲜水果</li>
+        </ul>
+    </div>
+    <div class="tit">秒杀(150)</div>
+    <div class="conRig">
+
+        <div class="context" id="context">
+            <div class="con">
+                <ul class="menu">
+                    <li>
+                        <img src="img/thumbnails.jpg" alt="">
+                        <dl class="dl">
+                            <dt>KOH COCONUT  泰国进口 椰子水 1L</dt>
+                            <dd><span>直降</span></dd>
+                            <dd><label><em>￥</em>10</label></dd>
+                        </dl>
+                        <div class="Box" data-price="10">
+                            <span class="reduce hide"></span>
+                            <label class="count hide">0</label>
+                            <span class="add"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnails.jpg" alt="">
+                        <dl class="dl">
+                            <dt>KOH COCONUT  泰国进口 椰子水 1L</dt>
+                            <dd><span>直降</span></dd>
+                            <dd><label><em>￥</em>5</label></dd>
+                        </dl>
+                        <div class="Box" data-price="5">
+                            <span class="reduce hide"></span>
+                            <label class="count hide">0</label>
+                            <span class="add"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnails.jpg" alt="">
+                        <dl class="dl">
+                            <dt>KOH COCONUT  泰国进口 椰子水 1L</dt>
+                            <dd><span>直降</span></dd>
+                            <dd><label><em>￥</em>5</label></dd>
+                        </dl>
+                        <div class="Box" data-price="5">
+                            <span class="reduce hide"></span>
+                            <label class="count hide">0</label>
+                            <span class="add"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnails.jpg" alt="">
+                        <dl class="dl">
+                            <dt>KOH COCONUT  泰国进口 椰子水 1L</dt>
+                            <dd><span>直降</span></dd>
+                            <dd><label><em>￥</em>5</label></dd>
+                        </dl>
+                        <div class="Box" data-price="5">
+                            <span class="reduce hide"></span>
+                            <label class="count hide">0</label>
+                            <span class="add"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnails.jpg" alt="">
+                        <dl class="dl">
+                            <dt>KOH COCONUT  泰国进口 椰子水 1L</dt>
+                            <dd><span>直降</span></dd>
+                            <dd><label><em>￥</em>5</label></dd>
+                        </dl>
+                        <div class="Box" data-price="5">
+                            <span class="reduce hide"></span>
+                            <label class="count hide">0</label>
+                            <span class="add"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/thumbnails.jpg" alt="">
+                        <dl class="dl">
+                            <dt>KOH COCONUT  泰国进口 椰子水 1L</dt>
+                            <dd><span>直降</span></dd>
+                            <dd><label><em>￥</em>1</label></dd>
+                        </dl>
+                        <div class="Box" data-price="1">
+                            <span class="reduce hide"></span>
+                            <label class="count hide">0</label>
+                            <span class="add"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="footer">
+        <div class="cart">
+            <i class="total hide">0</i>
+        </div>
+        <p class="mon">购物车是空的</p>
+        <div class="pay">去结算</div>
+    </div>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/iscroll-5.1.3.min.js"></script>
+<script src="js/category.js"></script>
+
+<script>
+    /*var leftIS = new IScroll("#list",{
+        bounce: true, //取消到达边界的缓冲效果
+        mouseWheel: true,  //开启鼠标滚动
+        //scrollbars: true,  //有滚动条
+        fadeScrollbars: true,
+        click:true
+    });
+    var rightIS = new IScroll("#context",{
+        bounce: false, //取消到达边界的缓冲效果
+        mouseWheel: true,  //开启鼠标滚动
+        //scrollbars: true,  //有滚动条
+        fadeScrollbars: true,
+        click:true
+    })*/
+</script>
+<!--<script>
+    var oUl = document.getElementById("ul");
+    oUl.addEventListener("touchstart", function(e){start(e)}, false);
+    oUl.addEventListener("touchmove", function(e){move(e)}, false);
+    oUl.addEventListener("touchend", function(e){end(e)}, false);
+
+    var startY = null;
+    var offset = null;
+
+
+
+    function start(e){
+        startY = e.changedTouches[0].pageY;  //触摸点距上部的距离
+        var curTy = oUl.style.webkitTransform;
+        var reg = /([-+]?\d+)/g;
+        var cur = reg.exec(curTy);
+        cur = cur || [0,0];
+        offset = cur[1];
+    }
+    function move(e){
+        e.preventDefault();
+        var moveY = e.changedTouches[0].pageY;
+        var movePos = moveY - startY;    //滑动的距离
+        movePos = Number(movePos);
+        offset = Number(offset);
+        var posi = movePos+offset;
+
+        oUl.style.webkitTransform = "translateY(" + posi + "px)";
+    }
+
+    function end(e){
+
+        var curTy = oUl.style.webkitTransform;
+        var reg = /([-+]?\d+)/g;
+        var cur = reg.exec(curTy);
+        cur = cur || [0,0];
+        cur = cur[1];   //当前的trans值
+        console.log(cur);
+        if(offset>=0 && cur>=0){
+            oUl.style.webkitTransform = "translateY(0px)";
+            return false;
+        }
+        //console.log(ul.offsetHeight);
+        var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        var move = -(ul.offsetHeight - clientHeight);
+        if (cur<move) {
+            oUl.style.webkitTransform = "translateY("+ (move+46) +"px)";
+            return false;
+        }
+
+    }
+
+</script>-->
